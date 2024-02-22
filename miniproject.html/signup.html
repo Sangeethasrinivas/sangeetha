@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            color: white;
+            font-style: italic;
+            font-size: x-large;
+        }
+        input{
+            border-radius: 10px;
+            border: 3px solid black;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYNc4u9-T-gBHc_-NgLSCcLQzSvGmh1c3fg&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-style: italic;
+            font-size: large;   
+        }        
+        fieldset{
+            filter: blur(0.8px);
+            height: 300px;
+            width: 300px;
+        margin-top: 150px;
+            margin-left: 100px;
+            border: 3px solid white;
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYNc4u9-T-gBHc_-NgLSCcLQzSvGmh1c3fg&usqp=CAU); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        legend{
+            color:white;
+            font-style: italic;
+            font-size: xx-large;
+            border: 3px solid black;
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYNc4u9-T-gBHc_-NgLSCcLQzSvGmh1c3fg&usqp=CAU); */
+        }
+        #id1{
+            border: 2px solid black;
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYNc4u9-T-gBHc_-NgLSCcLQzSvGmh1c3fg&usqp=CAU); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: x-large;
+            margin-inline: 100px;
+            font-style: italic;
+        }
+        body
+        {
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-image: url("https://t4.ftcdn.net/jpg/02/71/71/53/240_F_271715382_9kTJItQsqf76w69pgzJRRQWATVFo4E34.jpg");
+            /* background-image: url(https://t3.ftcdn.net/jpg/05/40/78/28/240_F_540782871_Zv3ae5sC4wAR57Y0y33WwCeVw245xHaG.jpg"); */
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>SIGNUP</legend>
+            <table>
+                <tr>
+                    <td><label for="username">User name</label>  </td>
+                    <td><input type="text" name="" id="username" pattern="[A-Za-z ]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password </label> </td>
+                    <td><input type="password" name="" id="password" pattern="[0-9]{6}" title="max 6 characters" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Confirm password</label></td>
+                    <td><input type="password" name="" id="password" pattern="[0-9]{6}" title="max 6 characters" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label>  </td>
+                    <td><input type="email" name="" id="email" pattern="[A-Za-z0-9.@]+" title="must contain at least one specialcharacter and uppercase and at least 8 or more characters" required></td>
+                </tr>
+                <!-- <tr> -->
+                    <!-- <td>Address </td> -->
+                    <!-- <td><textarea name="" id="" cols="30" rows="10" required></textarea></td> -->
+                <!-- </tr> -->
+                <tr>
+                    <td><label for="number">Number</label></td>
+                    <td><input type="tel" name="" id="number" pattern="[6-9]{1}[0-9]{9}" maxlength="10" title="enter the valid number format"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input type="radio" name="gender" id="" required>male <input type="radio" name="gender" id="" required>female</td>
+                </tr>
+               
+                <tr>
+<td><b><input type="submit" value="signup" id="id1"></b></td>
+<td><b><input type="submit" value="cancel" id="id1"></b></td>
+                </tr>
+            </table>
+           
+        </fieldset>
+    </form>
+</body>
+</html>
